@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Barbaz</title>
+
+    <style>
+        /* Style for the dropdown menu */
+        .dropdown {
+          position: relative;
+          display: inline-block;
+          
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color:gray;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          padding: 12px 16px;
+          
+        }
+        
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+
+        .dropdown-content a {
+  display: block;
+  padding: 8px 0;
+}
+      </style>
+    
+</head>
+<body>
+    <header>
+        <h1>Book your Barber Online</h1>
+    </header>
+     <div id="logo">
+        <img src="./pics.jpg/federico-tonini-tdDPj4Jpwu4-unsplash.jpg" alt="awesome" style="max-width: 50px;">
+    </div> 
+    
+     <nav>
+        <ul>
+    
+    <li><a href="">WELCOME</a></li>
+    <li><a href="">APPOINTMENTS</a></li>
+    <li class="dropdown"><a href="">BARBERS</a>
+        <div class="dropdown-content">
+           <a href="#">Josh W</a>
+            <a href="#">Woody</a>
+            <a href="#">Kisha</a>
+            <a href="#">Maddy B</a>
+            <a href="#">The Stallion</a>
+            <a href="#">Kiyoni L</a>
+
+          </div>
+    </li>
+    <li><a href="">SERVICES</a></li>
+    <li><a href="">ABOUT</a></li>
+        </ul>
+    </nav>
+
+
+    <div id="maindiv">
+        <h1>Stylists</h1>
+        
+        
+       
+    </div>
+        <div class="cardbox">
+             <div class="pics">
+                 <img src="./pics.jpg/jason-leung-2seUdPQNy_I-unsplash.jpg"style="width: 100%">
+ 
+             </div>
+                    <div class="pics">
+                        <img src="./pics.jpg/delfina-pan-wJoB8D3hnzc-unsplash.jpg"style="width: 100%">
+                    </div>
+    </div>
+    <div id="fom">
+        <form action="" method="post">
+            <label for="name">Name</label>
+            <input type="text" name="name" required>
+            <br>
+            <br>
+            <label for="email">Email</label>
+            <input type="email" name="email" required>
+            <br>
+            <br>
+            <label for ="phone">phone</label>
+            <input type="number" name="number" required>
+            <br>
+            <br>
+            <label for="feedback">Feedback</label>
+            <textarea name="feedback" name="feedback" required></textarea>
+            <br>
+            <br>
+             <input type="submit" value="submit">
+        </form>
+    </div>
+
+
+
+
+    <footer>
+        <div id="quik">
+            <h2>QuickLinks</h2>
+                <ul>
+                    <li>ABOUT</li>
+                    <li>CONTACT US</li>
+                    <li>FACEBOOK</li>
+                    <li>INSTAGRAM</li>
+                </ul>
+        </div>
+                 
+        <div class="icons">
+            <h2>Social Media platforms</h2>
+            <i class="fa fa-facebook" style="font-size:48px;"></i>
+            <i class="fa fa-instagram" style="font-size:48px;"></i>
+            <i class="fa fa-twitter" style="font-size:48px;"></i>
+        </div>
+       
+    </footer>
+    <script src="./index.js" ></script>    
+</body>
+</html> 
+
+
+

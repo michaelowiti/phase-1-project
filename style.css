@@ -1,0 +1,77 @@
+
+
+body{
+  color: antiquewhite;
+  background-color: black;
+   
+}
+  
+  
+  nav{
+    background-color: black;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;  
+    
+  }
+  nav ul {
+    display: flex;
+    justify-content:flex-end ;
+    list-style: none;
+  }
+  nav li{
+    margin-top: 50px;
+    margin-right: 20px;
+    padding: 10px 30px 10px 30px;
+    margin-bottom: 10px;
+
+  }
+  
+  
+  a{
+    text-decoration:none;
+    color: white
+    
+  }
+
+  footer{
+    display: flex;
+    background-color: black;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 500px;
+    justify-content: space-between;
+  }
+
+  .icons{
+    padding: 10px;
+    
+    
+  } 
+
+  .cardbox {
+    display: flex;
+    justify-content: center;
+    margin-top: 500px;
+  }
+  
+
+  .pics {
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 50px;
+    overflow: hidden;
+  }
+
+.pics img {
+  
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+  
