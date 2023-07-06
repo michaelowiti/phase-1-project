@@ -29,7 +29,7 @@ function renderBarber(barbers){
          li.id=barb.id
          barblist.append(li)
 
-         li.addEventListener('click',displayBarberInfo)
+         li.addEventListener('click',displayBarberInfo)// when the list of barbers/stylist is clicked it displays their works
 
     
         });  
