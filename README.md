@@ -23,7 +23,7 @@ This project aims to solve the problem of time when it comes to booking for a ha
 One major challenge faced in this project was using multiple forms in the same html document to utilize fetch requests.It had alot of bugs thus forcing the reduction of forms to one.Apart from the forementioned there is no other known bug.
 
 # JSON Server Instructions
-Note: Using json-server is a stretch goal, so make sure you have a working MVP before trying to set up json-server!
+Note: Using json-server is a stretch goal, so make sure you have a working MVP before trying to set up json-server! ...
 
 You can use this json-server templateLinks to an external site. to generate your backend code. Using this template will make it easier to deploy your backend later on.
 
