@@ -3,7 +3,6 @@
 #### CREATED BY MICHAEL OWITI JR ON 06-07-2023
 
 
-
 # PROJECT REQUIREMENTS
 Your app must be a HTML/CSS/JS frontend that accesses data from a public API. All interactions between the client and the API should be handled asynchronously and use JSON as the communication format. (Alternatively use an Array)
 
@@ -19,6 +18,8 @@ Follow good coding practices. Keep your code DRY (Do not repeat yourself) by uti
 This project aims to solve the problem of time when it comes to booking for a hair cut.This app allows you to see a list of professional barbers and the services they offer then book their services.You are allowed to change your appointment if need arises as they have a very dynamic system.
 # LIVE LINK
 
+# Challenges
+One major challenge faced in this project was using multiple forms in the same html document to utilize fetch requests.It had alot of bugs thus forcing the reduction of forms to one.Apart from the forementioned there is no other known bug.
 
 # JSON Server Instructions
 Note: Using json-server is a stretch goal, so make sure you have a working MVP before trying to set up json-server!

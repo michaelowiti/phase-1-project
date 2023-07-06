@@ -5,15 +5,6 @@ body{
   background-color: black;
    
 }
- #logo{
-  
-  padding-top: 10px;
-}
-  #logo img{
-    height: 150px;
-    margin-top: 20px;
-
-  } 
 
   #navdiv{
     display: flex;
@@ -55,7 +46,7 @@ body{
     rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
     margin-left: 40px;
     margin-right: 40px;
-    margin-top: 300px;
+    margin-top: 100px;
     justify-content: space-between;
   }
 
@@ -68,7 +59,7 @@ body{
   .cardbox {
     display: flex;
     justify-content: center;
-    margin-top: 500px;
+    margin-top: 200px;
   }
   
   
@@ -129,4 +120,16 @@ body{
   }
   #fom{
     margin-bottom: 0px;
+  }
+  .card h1{
+    display: flex;
+    margin-left: 700px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+
+  }
+  .cardbox h1{
+    z-index: 1;
+    margin-left: 100px;
+    
   }
