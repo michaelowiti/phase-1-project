@@ -44,7 +44,7 @@ async function displayBarberInfo(e){
 
     const image=document.createElement("img")
     const name=document.createElement("h1")
-    const cost=document.createElement("h1")
+    const cost=document.createElement("h2")
     const style1= document.createElement("img")
     const style2= document.createElement("img")
     const style3= document.createElement("img")
@@ -63,8 +63,8 @@ async function displayBarberInfo(e){
                         // to ensure that only the details of the selected barber are displayed.
      
     // mydiv.append(btn)
-    mydiv.append(name)
-    mydiv.append(cost)
+    //mydiv.append(name)
+    //mydiv.append(cost)
     mydiv.append(image)
     mydiv.append(style1)
     mydiv.append(style2)
@@ -77,6 +77,32 @@ async function displayBarberInfo(e){
     
     
 }
+
+// const up=document.getElementById("Upbtn")
+// up.addEventListener('click',updateData)
+// const config={
+//     method: "PATCH",
+//     headers: {
+//         "Content-Type": "application/json",
+//         Accept: "application/json",
+//     },
+//     body:JSON.stringify({
+//         phone:"0712345",
+//         time:"17:30",
+//     }),
+// }
+// function updateData(e){
+//     fetch("https://barbers.onrender.com/bookings/19",config)
+    
+//     .then(res=>res.json())
+//     .then(data=>console.log(data))
+//     .catch(error => console.error(error));
+
+// }
+
+
+
+
 const del=document.getElementById("delbtn")
 del.addEventListener('click',deleteFeedback)
 const configurationObj={

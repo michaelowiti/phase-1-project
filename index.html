@@ -37,12 +37,10 @@
     
 </head>
 <body>
-    <header>
-        <h1>Book your Barber Online</h1>
-    </header>
-     <div id="logo">
-        <img src="./pics.jpg/federico-tonini-tdDPj4Jpwu4-unsplash.jpg" alt="awesome" style="max-width: 50px;">
-    </div> 
+    
+     <!-- <div id="logo">
+        <img src="./pics.jpg/federico-tonini-tdDPj4Jpwu4-unsplash.jpg" alt="awesome">
+    </div>  -->
     
      <nav>
         <ul>
@@ -76,22 +74,27 @@
 
     <div id="book">
         <h1>Book Appointment</h1>
-        <form action="https://barbers.onrender.com/bookings"method="POST">
+        <form id="Apfom" action="https://barbers.onrender.com/bookings"method="POST">
             <label>name</label>
             <input type="text" name="name" id="name" required>
             <br>
             <br>
             <label >phone:</label>
-            <input type="number" name="number"id="number" required>
-            
+            <input type="number" name="phone"id="number" required>
+            <br>
+            <br>
+            <label >time:</label>
+            <input type="time" name="time"id="time" required>
             
             <input type="submit" id="submit" value="Book Barber">
             </input>
+            <button id="Upbtn">Update</button>
         
     </div>
 
         <div class="cardbox">
              <div class="pics">
+                
                  <img src="./pics.jpg/jason-leung-2seUdPQNy_I-unsplash.jpg"style="width: 100%">
  
              </div>
@@ -107,7 +110,7 @@
     </div>
     <div id="fom">
         <h1>Submit feedback</h1>
-        <form action="https://barbers.onrender.com/feedback"method="POST">
+        <form id="feedfom" action="https://barbers.onrender.com/feedback"method="POST">
             <label>name</label>
             <input type="text" name="name" id="name" required>
             <br>

@@ -5,13 +5,27 @@ body{
   background-color: black;
    
 }
+ #logo{
   
+  padding-top: 10px;
+}
+  #logo img{
+    height: 150px;
+    margin-top: 20px;
+
+  } 
+
+  #navdiv{
+    display: flex;
+
+  }
   
   nav{
     background-color: black;
     box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
     rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;  
     margin-left: 100px;
+    padding-top: 10px
     
   }
   nav ul {
@@ -41,7 +55,7 @@ body{
     rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
     margin-left: 40px;
     margin-right: 40px;
-    margin-top: 500px;
+    margin-top: 300px;
     justify-content: space-between;
   }
 
@@ -67,6 +81,7 @@ body{
     margin: 50px;
     overflow: hidden;
   }
+  
 
 .pics img {
   
@@ -95,13 +110,9 @@ body{
   
   }
 
-  .card h1{
-    display:contents;
+  
+      
     
-    
-
-
-  }
     /* .card button{
     display:inline-block;
     width: 50px;
@@ -115,4 +126,7 @@ body{
     margin-top: 40px;
 
 
+  }
+  #fom{
+    margin-bottom: 0px;
   }
