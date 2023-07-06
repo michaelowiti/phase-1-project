@@ -113,7 +113,7 @@ const configurationObj={
    }}
 function deleteBooking(e){
     
-    fetch("https://barbers.onrender.com/bookings/4",configurationObj)
+    fetch("https://barbers.onrender.com/bookings/2",configurationObj)
     
 .then(res=>res.json())
 .then(data=>console.log(data))
