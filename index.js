@@ -104,16 +104,16 @@ async function displayBarberInfo(e){
 
 
 const del=document.getElementById("delbtn")
-del.addEventListener('click',deleteFeedback)
+del.addEventListener('click',deleteBooking)
 const configurationObj={
     method: "DELETE",
    headers: {
        "Content-Type": "application/json",
        Accept: "application/json",
    }}
-function deleteFeedback(e){
+function deleteBooking(e){
     
-    fetch("https://barbers.onrender.com/feedback/1",configurationObj)
+    fetch("https://barbers.onrender.com/bookings/4",configurationObj)
     
 .then(res=>res.json())
 .then(data=>console.log(data))
