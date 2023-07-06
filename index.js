@@ -26,6 +26,7 @@ function renderBarber(barbers){
     barbers.forEach(barb => {
         const li=document.createElement("li")
          li.textContent=barb.name
+         li.id=barb.id
          barblist.append(li)
 
          li.addEventListener('click',displayBarberInfo)
@@ -35,9 +36,11 @@ function renderBarber(barbers){
     }
 
 async function displayBarberInfo(e){
+ 
     
     const barberId=e.target.id
     const barber= await fetchSelectedBarber(barberId)
+    
 
     const image=document.createElement("img")
     const name=document.createElement("h1")
@@ -45,8 +48,8 @@ async function displayBarberInfo(e){
     const style1= document.createElement("img")
     const style2= document.createElement("img")
     const style3= document.createElement("img")
-    const btn=document.createElement("button")
-    btn.textContent="Book Appointment"
+   // const btn=document.createElement("button")
+    //btn.textContent="Book Appointment"
 
     image.src=barber.photo
     name.textContent=barber.name
@@ -58,21 +61,50 @@ async function displayBarberInfo(e){
     mydiv=document.getElementById("portfolio")
     mydiv.innerHTML="" //The function clears the `mydiv` element before appending the HTML elements
                         // to ensure that only the details of the selected barber are displayed.
-    //  mydiv.append(image)
-      //mydiv.append(name)
-     // mydiv.append(cost)
-       // mydiv.append(style1)
-         // mydiv.append(style2)
-           // mydiv.append(style3)
-             // mydiv.append(btn)
-     const template = `<img src='${barber.photo}'><h1>${barber.name}</h1><h1>${barber.price}</h1><img src='${barber.style1}'><img src='${barber.style2}'><img src='${barber.style3}'><button>Book Appointment</button>`;
-     mydiv.innerHTML = template;
+     
+    // mydiv.append(btn)
+    mydiv.append(name)
+    mydiv.append(cost)
+    mydiv.append(image)
+    mydiv.append(style1)
+    mydiv.append(style2)
+    mydiv.append(style3)
+            
+             
+    //  const template = `<img src='${barber.photo}'><h1>${barber.name}</h1><h1>${barber.price}</h1><img src='${barber.style1}'><img src='${barber.style2}'><img src='${barber.style3}'><button>Book Appointment</button>`;
+    //  mydiv.innerHTML = template;
 
     
-
-
     
+}
+const del=document.getElementById("delbtn")
+del.addEventListener('click',deleteFeedback)
+const configurationObj={
+    method: "DELETE",
+   headers: {
+       "Content-Type": "application/json",
+       Accept: "application/json",
+   }}
+function deleteFeedback(e){
+    
+    fetch("https://barbers.onrender.com/feedback/1",configurationObj)
+    
+.then(res=>res.json())
+.then(data=>console.log(data))
+.catch(error => console.error(error));
 }
 
 
+
  document.addEventListener('DOMContentLoaded',fetchBarbers)
+
+
+
+
+
+
+
+
+
+
+

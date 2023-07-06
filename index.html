@@ -70,9 +70,26 @@
         <h1>Stylists</h1>
          
     </div>
-    <div id="portfolio">
+    <div class="card" id="portfolio">
+       
+    </div>
+
+    <div id="book">
+        <h1>Book Appointment</h1>
+        <form action="https://barbers.onrender.com/bookings"method="POST">
+            <label>name</label>
+            <input type="text" name="name" id="name" required>
+            <br>
+            <br>
+            <label >phone:</label>
+            <input type="number" name="number"id="number" required>
+            
+            
+            <input type="submit" id="submit" value="Book Barber">
+            </input>
         
     </div>
+
         <div class="cardbox">
              <div class="pics">
                  <img src="./pics.jpg/jason-leung-2seUdPQNy_I-unsplash.jpg"style="width: 100%">
@@ -81,27 +98,30 @@
                     <div class="pics">
                         <img src="./pics.jpg/delfina-pan-wJoB8D3hnzc-unsplash.jpg"style="width: 100%">
                     </div>
+                    <div class="pics">
+                        <img src="./pics.jpg/jeppe-monster-T_gTN3Po9RQ-unsplash.jpg">
+                    </div>
+                    <div class="pics">
+                        <img src="./pics.jpg/redd-f-wZaY9P5zdnY-unsplash.jpg" >
+                    </div>
     </div>
     <div id="fom">
-        <form action="" method="post">
-            <label for="name">Name</label>
-            <input type="text" name="name" required>
+        <h1>Submit feedback</h1>
+        <form action="https://barbers.onrender.com/feedback"method="POST">
+            <label>name</label>
+            <input type="text" name="name" id="name" required>
             <br>
             <br>
-            <label for="email">Email</label>
-            <input type="email" name="email" required>
+            <label >email:</label>
+            <input type="email" name="email"id="email" required>
             <br>
             <br>
-            <label for ="phone">phone</label>
-            <input type="number" name="number" required>
-            <br>
-            <br>
-            <label for="feedback">Feedback</label>
-            <textarea name="feedback" name="feedback" required></textarea>
-            <br>
-            <br>
-             <input type="submit" value="submit">
-        </form>
+            <label >message:</label>
+            <input type="text" name="message"id="message" required>
+
+            <input type="submit" id="submit" value="submit">
+            </input>
+            <button id="delbtn">Delete feedback</button>
     </div>
 
 

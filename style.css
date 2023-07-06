@@ -11,6 +11,7 @@ body{
     background-color: black;
     box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
     rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;  
+    margin-left: 100px;
     
   }
   nav ul {
@@ -60,7 +61,7 @@ body{
 
   .pics {
     width: 300px;
-    background-color: white;
+    background-color:black;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     margin: 50px;
@@ -74,5 +75,44 @@ body{
   height: auto;
 }
 
+#maindiv{
+  list-style: none;
+}
+  #maindiv li{
+    padding-top: 10px;
+  }
 
+  .card{
+    width: 300px;
+    display: flex;
+    
+  }
+  .card img{    
+    width: 100%;
+    height: auto;
+    margin: 50px;
+    border-radius: 10px;
   
+  }
+
+  .card h1{
+    display:contents;
+    
+    
+
+
+  }
+    /* .card button{
+    display:inline-block;
+    width: 50px;
+    height: 20px;
+    margin-top: 100px;
+  }  */
+
+  #bookcut{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+
+
+  }
