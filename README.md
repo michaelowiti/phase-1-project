@@ -27,7 +27,7 @@ Note: Using json-server is a stretch goal, so make sure you have a working MVP b
 
 You can use this json-server templateLinks to an external site. to generate your backend code. Using this template will make it easier to deploy your backend later on.
 
-If you prefer, instead of using the template, you can create a db.json file with a structure in the root of your project that looks like this: e,f
+If you prefer, instead of using the template, you can create a db.json file with a structure in the root of your project that looks like this: 
 
 ## Support and contact details 🙂
 

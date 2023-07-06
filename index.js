@@ -124,6 +124,8 @@ function deleteBooking(e){
 
  document.addEventListener('DOMContentLoaded',fetchBarbers)
 
+ 
+
 
 
 
