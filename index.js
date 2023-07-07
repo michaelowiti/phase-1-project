@@ -78,7 +78,7 @@ async function displayBarberInfo(e){
 }
 
 
-const delfeedback=document.getElementById("deletebtn")
+const delfeedback=document.getElementById("deletebtn")// deletes the feedback with the matching id
 delfeedback.addEventListener('click',deleteFeedback)
 const config={
     method: "DELETE",
@@ -137,7 +137,7 @@ function addBooking(e){
 
 
 
-const del=document.getElementById("delbtn")
+const del=document.getElementById("delbtn")//this function deletes the booking with the matching id
 del.addEventListener('click',deleteBooking)
 const configurationObj={
     method: "DELETE",
@@ -190,7 +190,7 @@ function addFeedback(e){
 
 }
 
-
+//all functions are perfectly working in this project
 
 
  document.addEventListener('DOMContentLoaded',fetchBarbers)
