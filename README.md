@@ -17,7 +17,7 @@ Follow good coding practices. Keep your code DRY (Do not repeat yourself) by uti
 ## DESCRIPTION
 This project aims to solve the problem of time when it comes to booking for a hair cut.This app allows you to see a list of professional barbers and the services they offer then book their services.You are allowed to change your appointment if need arises as they have a very dynamic system.
 # LIVE LINK
-
+https://michaelowiti.github.io/phase-1-project/
 
 # Challenges
 One major challenge faced in this project was using multiple forms in the same html document to utilize fetch requests.It had alot of bugs thus forcing the reduction of forms to one.Apart from the forementioned there is no other known bug.
