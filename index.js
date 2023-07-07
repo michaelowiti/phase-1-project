@@ -9,7 +9,7 @@ function fetchBarbers(){
 
 //this function fetches only the selected barber
  async function fetchSelectedBarber(barberId){
-    return fetch(`https://barbers.onrender.com/barbers/${barberId}`)
+    return fetch(` https://barbers.onrender.com/barbers/${barberId}`)
     .then(resp => {
         if (!resp.ok) {
             throw new Error('Network response was not ok');
@@ -74,31 +74,65 @@ async function displayBarberInfo(e){
     //  const template = `<img src='${barber.photo}'><h1>${barber.name}</h1><h1>${barber.price}</h1><img src='${barber.style1}'><img src='${barber.style2}'><img src='${barber.style3}'><button>Book Appointment</button>`;
     //  mydiv.innerHTML = template;
 
+     
+}
+
+
+const delfeedback=document.getElementById("deletebtn")
+delfeedback.addEventListener('click',deleteFeedback)
+const config={
+    method: "DELETE",
+    headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+    },
+   
+}
+function deleteFeedback(e){
+    fetch("https://barbers.onrender.com/feedback/10",config)
     
+    .then(res=>res.json())
+    .then(data=>console.log(data))
+    .catch(error => console.error(error));
+
+}
+
+
+const bookfom=document.getElementById("Apfom")
+bookfom.addEventListener('submit',addBooking)
+function addBooking(e){
+    
+    e.preventDefault()
+    
+    const nameVal=e.target.querySelector("#name")
+    const numberVal=e.target.querySelector("#number")
+    const timeVal=e.target.querySelector("#time")
+    
+    const bookingData={
+        name:nameVal.value,
+        phone:numberVal.value,
+        time:timeVal.value,
+        }
+
+        const obj={
+                 method: "POST",
+                 headers: {
+                     "Content-Type": "application/json",
+                     Accept: "application/json",
+                         },
+                  body:JSON.stringify(bookingData),
+            }
+
+        
+
+        fetch("https://barbers.onrender.com/bookings",obj)
+        
+
+       
+
     
 }
 
-// const up=document.getElementById("Upbtn")
-// up.addEventListener('click',updateData)
-// const config={
-//     method: "PATCH",
-//     headers: {
-//         "Content-Type": "application/json",
-//         Accept: "application/json",
-//     },
-//     body:JSON.stringify({
-//         phone:"0712345",
-//         time:"17:30",
-//     }),
-// }
-// function updateData(e){
-//     fetch("https://barbers.onrender.com/bookings/19",config)
-    
-//     .then(res=>res.json())
-//     .then(data=>console.log(data))
-//     .catch(error => console.error(error));
-
-// }
 
 
 
@@ -113,12 +147,49 @@ const configurationObj={
    }}
 function deleteBooking(e){
     
-    fetch("https://barbers.onrender.com/bookings/2",configurationObj)
+    fetch("https://barbers.onrender.com/bookings/3",configurationObj)
     
 .then(res=>res.json())
 .then(data=>console.log(data))
 .catch(error => console.error(error));
 }
+
+
+
+
+
+const submitFeed=document.getElementById("fom")
+submitFeed.addEventListener('submit',addFeedback)
+
+function addFeedback(e){
+    e.preventDefault()
+   
+
+     const nameVal=e.target.querySelector("#name")
+    const emailVal=e.target.querySelector("#email")
+     const messageVal=e.target.querySelector("#message")
+
+     const feedbackData={
+        name:nameVal.value,
+        phone:emailVal.value,
+        time:messageVal.value,
+        }
+
+        const object={
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json",
+                    },
+             body:JSON.stringify(feedbackData),
+       }
+
+
+       fetch("https://barbers.onrender.com/feedback",object)
+
+
+}
+
 
 
 
