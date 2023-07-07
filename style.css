@@ -143,3 +143,22 @@ body{
   color: white;
   text-align: center;
   }
+
+  #book button{
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #000000;
+    color: antiquewhite;
+  }
+  #fom button{
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #000000;
+    color: antiquewhite;
+  }
+
+  
+  
+  
